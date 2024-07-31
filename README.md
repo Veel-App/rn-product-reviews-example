@@ -1,50 +1,73 @@
-# Welcome to your Expo app 👋
-
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+# @veel/rn-product-reviews
+![icon](https://www.veelapp.com/enterprise/main-logo-b22f8e90.svg)
+Example App for Veel Product Reviews built using @veel/rn-product-reviews
 
 ## Get started
 
-1. Install dependencies
+1. Clone Project
+
+   ```bash
+      git clone https://github.com/rajsawhoney/rn-product-reviews-example.git
+   ```
+
+2. Install dependencies
 
    ```bash
    npm install
+   yarn install
    ```
 
-2. Start the app
+3. Pre-build app
 
    ```bash
-    npx expo start
+   npx expo prebuild
    ```
 
-In the output, you'll find options to open the app in a
+4. Start the app
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+   ```bash
+   npx expo run:android
+   npx expo run:ios
+   ```
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Package Link
+https://www.npmjs.com/package/@veel/rn-product-reviews
 
-## Get a fresh project
+## Example App
 
-When you're ready, run:
+```js
+import { StyleSheet, View } from 'react-native';
+import { VeelReviewButton, VeelReviewsList } from '@veel/rn-product-reviews';
 
-```bash
-npm run reset-project
+export default function App() {
+  return (
+    <View style={styles.container}>
+      <VeelReviewButton brandKey={process.env.BRAND_KEY} apiKey={process.env.API_KEY}/>
+      <VeelReviewsList brandKey={process.env.BRAND_KEY} apiKey={process.env.API_KEY} />
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
+
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## What is BRAND_KEY & API_KEY & Where to get one?
+https://www.veelapp.com/docs/product-reviews#generate-keys
 
-## Learn more
 
-To learn more about developing your project with Expo, look at the following resources:
+## Contributing
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
 
-## Join the community
+## License
 
-Join our community of developers creating universal apps.
+MIT
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+---

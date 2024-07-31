@@ -14,7 +14,12 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.veelreview.example"
+      "bundleIdentifier": "com.veelreview.example",
+      "infoPlist": {
+                "LSApplicationQueriesSchemes": [
+                "veel-app"
+                ]
+            }
     },
     "android": {
       "adaptiveIcon": {
