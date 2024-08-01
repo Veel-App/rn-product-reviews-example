@@ -1,5 +1,6 @@
+![icon](https://www.veelapp.com/_next/static/media/appLogoDark.ac29fc81.svg)
+
 # @veel/rn-product-reviews
-![icon](https://www.veelapp.com/enterprise/main-logo-b22f8e90.svg)
 Example App for Veel Product Reviews built using @veel/rn-product-reviews
 
 ## Get started
@@ -7,7 +8,7 @@ Example App for Veel Product Reviews built using @veel/rn-product-reviews
 1. Clone Project
 
    ```bash
-      git clone https://github.com/rajsawhoney/rn-product-reviews-example.git
+   git clone https://github.com/rajsawhoney/rn-product-reviews-example.git
    ```
 
 2. Install dependencies
