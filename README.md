@@ -1,6 +1,7 @@
 ![icon](https://www.veelapp.com/_next/static/media/appLogoDark.ac29fc81.svg)
 
 # @veel/rn-product-reviews
+
 Example App for Veel Product Reviews built using @veel/rn-product-reviews
 
 ## Get started
@@ -32,6 +33,7 @@ Example App for Veel Product Reviews built using @veel/rn-product-reviews
    ```
 
 ## Package Link
+
 https://www.npmjs.com/package/@veel/rn-product-reviews
 
 ## Example App
@@ -43,8 +45,16 @@ import { VeelReviewButton, VeelReviewsList } from '@veel/rn-product-reviews';
 export default function App() {
   return (
     <View style={styles.container}>
-      <VeelReviewButton brandKey={process.env.BRAND_KEY} apiKey={process.env.API_KEY}/>
-      <VeelReviewsList brandKey={process.env.BRAND_KEY} apiKey={process.env.API_KEY} />
+      <VeelReviewButton
+        brandKey={process.env.BRAND_KEY}
+        apiKey={processenv.API_KEY}
+        videoPath="/MyCategory/MyProduct"
+      />
+      <VeelReviewsList
+        brandKey={process.env.BRAND_KEY}
+        apiKey={process.env.API_KEY}
+        videoPath="/MyCategory/MyProduct"
+      />
     </View>
   );
 }
@@ -56,12 +66,11 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
-
 ```
 
 ## What is BRAND_KEY & API_KEY & Where to get one?
-https://www.veelapp.com/docs/product-reviews#generate-keys
 
+https://www.veelapp.com/docs/product-reviews#generate-keys
 
 ## Contributing
 
